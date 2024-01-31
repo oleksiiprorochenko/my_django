@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The BEST site</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'main.css' %}">
+        <style> 
+        .simple-button {
+            padding: 8px 36px;
+            background-color: #c9e724; /* Білий фон */
+            border: 1px solid #000; /* Чорна рамка */
+            color: #000; /* Чорний текст */
+            text-decoration: none; /* Відміна підкреслення тексту */
+            display: inline-block; /* Розміщення в рядок */
+            font-size: 14px; /* Розмір тексту */
+            cursor: pointer; /* Зміна форми курсору при наведенні */
+        }
+        </style> 
+        <style>
+          .footer {
+            background-color: #cecfea;
+             position: fixed;
+             right: 0;
+             bottom: 0;
+             text-align: center; 
+             width: 99%;   
+             font-size: 19px;
+          font-weight: bold;
+            color: #0b7131;  
+           }
+          </style>
+          <style>
+          <div class="header">
+            <h1>Header</h1>
+            <p>My supercool header</p>
+          </div>
+          </style>
+
+         {% load django_bootstrap5 %}
+         {% bootstrap_css %}
+         {% bootstrap_javascript %}
+    </head>
+
+<body>
+
+<h1>The BEST Heading :-) </h1>
+<h3>The BEST paragraph -- > </h3>
+
+
+      
+<a href='http://127.0.0.1:8000/myapp/teams/'>
+    Our Teams or click there -- >
+    <button class="simple-button"> 
+        Our Teams 
+    </button> 
+</a>
+<div class="footer">
+    <p>by Oleksii Prorochenko</p>
+</div>
+<div id="content">
+{% block content %}
+{% endblock %}
+</div>
+
+
+</body>
+</html>

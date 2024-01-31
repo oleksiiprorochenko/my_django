@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+
+{% for n, k in blog_city.items %}
+  <h5>{{n}} </h5>
+  <p>{{k}}</p>
+  
+        
+       
+{% endfor %}
+<table>
+    <caption>More information</caption>
+    <thead>
+<tr>
+    <th>Ukraine</th>
+    <th>Germany</th>
+    <th>Italy</th>
+  </tr>
+</thead>
+<tr>
+  <td>Kyiv</td>
+  <td>Berlin</td>
+  <td>Rome</td>
+</tr> 
+</table>
+
+{% endblock %}
