@@ -137,3 +137,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = '/static/' 
 # Додайте цей рядок нижче в налаштуваннях.py
 STATICFILES_DIRS = [BASE_DIR / "static" , ]
+
+# django_project/settings.py
+# LOGIN_REDIRECT_URL = "home"
+# LOGOUT_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = "/"
+LOGIN_URL = "/myapp/login/"
+LOGOUT_REDIRECT_URL = "/"

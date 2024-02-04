@@ -1,0 +1,49 @@
+<!-- templates/registration/login.html -->
+{% extends "main.html" %}
+
+{% block content %}
+<!-- Section: Design Block -->
+<section class=" text-center text-lg-start">
+  <style>
+    .rounded-t-5 {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+      .rounded-bl-lg-5 {
+        border-bottom-left-radius: 0.5rem;
+      }
+    }
+  </style>
+  <div class="card mb-3">
+    <div class="row g-0 d-flex align-items-center">
+      <div class="col-lg-4 d-none d-lg-flex">
+        <img src="/static/image/kyiv.jpg" alt="Evevning Kyiv"
+          class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
+      </div>
+      <div class="col-lg-8">
+        <div class="card-body py-5 px-md-5">
+          <h2>Log In</h2>
+          <form method="post">
+          {% csrf_token %}
+          {{ form }}
+          </form>
+          <!-- Log In button -->
+        <button type="submit" class="btn btn-primary btn-block mb-2">Log In</button>
+          <!-- Remember me -->
+          <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="rememberMe">
+            <label class="custom-control-label" for="rememberMe">Remember me</label>
+          </div>
+          <!-- Forgot Password link -->
+        <a href="{% url 'password_reset' %}" class="d-block text-center text-muted">Forgot Password?</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->
+
+
+{% endblock %}

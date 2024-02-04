@@ -1,17 +1,25 @@
 h1 {
-    color: chartreuse;
+    color: rgb(239, 243, 235);
     border: aliceblue;
 }
 h3 {
-    color: aqua;
-    background-color: brown;
+    color: rgb(170, 183, 183);
+    background-color: rgb(3, 54, 67);
+}   
+h2 {
+  color: rgb(220, 214, 210);
+  border: rgb(57, 102, 142);
+}
+h4 {
+  color: aqua;
+  background-color: brown;
 }   
 .header {
-    padding: 60px;
+    padding: 20px;
     text-align: center;
-    background: #1abc9c;
+    background: #708984;
     color: white;
-    font-size: 30px;
+    font-size: 10px;
   }
 
 .content {color: rgb(131, 157, 106);
@@ -30,21 +38,6 @@ h3 {
         .mySlides {
           display: none;
         }
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
 
 /* Position the "next button" to the right */
 .next {
