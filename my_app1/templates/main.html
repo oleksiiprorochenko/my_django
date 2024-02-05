@@ -16,16 +16,11 @@
   cursor: pointer; /* Зміна форми курсору при наведенні */
 }
 .footer {
-  background-color: #cecfea;
-  /* position:fixed; */
-  right: 0;
-  bottom: 0;
-  text-align: center; 
-  width: 100%;   
-  font-size: 19px;
-  font-weight: bold;
-    color: #0b7131;  
-   }
+  text-align: center;
+  padding: 20px;
+  background-color: DarkSalmon;
+  color: white;
+}
        
           
           </style>
@@ -51,14 +46,15 @@
         Our Teams 
     </button> 
 </a>
-<div class="footer">
-    <p>by Oleksii Prorochenko</p>
-</div>
+
 <div id="content">
 {% block content %}
 {% endblock %}
 </div>
-
+<div class="footer">
+  <p>by Oleksii Prorochenko</p>
+  <p>Kyiv, 2024</p>
+</div>
 
 </body>
 </html>
